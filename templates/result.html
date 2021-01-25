@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Score prediction</title></head>
+    <body>
+        <p>
+            <h3>Prediction 1 :  {{ prediction_1 }}</h3>
+            <h3>Prediction 2 :  {{ prediction_2 }}</h3>
+            <h3>Prediction 3 :  {{ prediction_3 }}</h3>
+            <h3>Most probable score range :{{ mean-5 }} to {{ mean+5 }}</h3>
+
+        </p>
+
+        <h2><p><a href="{{ url_for('predict') }}">Do it again?</a></p></h2>
+    </body>
+</html>
